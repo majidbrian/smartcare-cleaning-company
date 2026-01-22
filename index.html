@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartcare Cleaning Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Smartcare Cleaning Company</h1>
+  <p>Professional & Reliable Cleaning Services</p>
+</header>
+
+<nav>
+  <a href="#services">Services</a>
+  <a href="#booking">Book Now</a>
+</nav>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service">Home Cleaning</div>
+    <div class="service">Office Cleaning</div>
+    <div class="service">Carpet Cleaning</div>
+    <div class="service">Post-Construction Cleaning</div>
+    <div class="service">Move In / Move Out</div>
+  </div>
+</section>
+
+<section id="booking">
+  <h2>Book a Cleaning Service</h2>
+
+  <form id="bookingForm">
+
+    <label>Full Name</label>
+    <input type="text" name="customer_name" required>
+
+    <label>Phone Number</label>
+    <input type="tel" name="customer_phone" required>
+
+    <label>Service Type</label>
+    <select name="service_type" required>
+      <option>Home Cleaning</option>
+      <option>Office Cleaning</option>
+      <option>Carpet Cleaning</option>
+      <option>Post-Construction</option>
+      <option>Move In / Move Out</option>
+    </select>
+
+    <label>Date</label>
+    <input type="date" name="service_date" required>
+
+    <label>Time Slot</label>
+    <select name="time_slot" required>
+      <option>08:00 - 10:00</option>
+      <option>10:00 - 12:00</option>
+      <option>13:00 - 15:00</option>
+      <option>15:00 - 17:00</option>
+    </select>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Smartcare Cleaning Company
+</footer>
+
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
