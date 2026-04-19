@@ -2,80 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smartcare Cleaning Company</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Smartcare Cleaning Company | Professional Cleaning Services</title>
+  <meta name="description" content="Smartcare Cleaning offers professional home, office, and carpet cleaning services. Book your appointment online today.">
+  <meta name="keywords" content="cleaning service, home cleaning, office cleaning, carpet cleaning">
+  <meta name="author" content="Smartcare Cleaning">
+  
+  <!-- Open Graph (Social Media Preview) -->
+  <meta property="og:title" content="Smartcare Cleaning Company">
+  <meta property="og:description" content="Professional & Reliable Cleaning Services.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon (Replace with actual favicon) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
 
-  <!-- CSS -->
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
-</head>
 
+  <!-- Schema.org Markup for Local Business (SEO Hack) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Smartcare Cleaning Company",
+    "description": "Professional cleaning services for homes and offices.",
+    "url": "https://yourwebsite.com",
+    "telephone": "+60-12-345-6789",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
 <body>
 
-<header>
-  <h1>Smartcare Cleaning Company</h1>
-  <p>Professional & Reliable Cleaning Services</p>
-</header>
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="brand">
+        <i class="fas fa-sparkles brand-icon"></i>
+        <div class="brand-text">
+          <h1>Smartcare</h1>
+          <span>Cleaning Company</span>
+        </div>
+      </div>
+      <p class="tagline">Professional & Reliable Cleaning Services</p>
+    </div>
+  </header>
 
-<nav>
-  <a href="#services">Services</a>
-  <a href="#booking">Book Now</a>
-</nav>
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <a href="#services" class="nav-link"><i class="fas fa-broom"></i> Services</a>
+      <a href="#booking" class="nav-link"><i class="fas fa-calendar-check"></i> Book Now</a>
+    </div>
+  </nav>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="service">Home Cleaning</div>
-    <div class="service">Office Cleaning</div>
-    <div class="service">Carpet Cleaning</div>
-    <div class="service">Post-Construction Cleaning</div>
-    <div class="service">Move In / Move Out</div>
-  </div>
-</section>
+  <main>
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What We Offer</h2>
+          <p>Comprehensive cleaning solutions tailored to your needs.</p>
+        </div>
 
-<section id="booking">
-  <h2>Book a Cleaning Service</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon"><i class="fas fa-home"></i></div>
+            <h3>Home Cleaning</h3>
+            <p>Detailed deep cleaning for your living space.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="fas fa-building"></i></div>
+            <h3>Office Cleaning</h3>
+            <p>Maintain a professional and hygienic workspace.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="fas fa-couch"></i></div>
+            <h3>Carpet Cleaning</h3>
+            <p>Remove stubborn stains and allergens effectively.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+            <h3>Post-Construction</h3>
+            <p>Thorough cleanup after renovation projects.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i class="fas fa-truck-moving"></i></div>
+            <h3>Move In / Out</h3>
+            <p>Spotless preparation for your new home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <form id="bookingForm">
+    <!-- Booking Section -->
+    <section id="booking" class="section booking-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Book a Service</h2>
+          <p>Select your preferred date and time.</p>
+        </div>
 
-    <label>Full Name</label>
-    <input type="text" name="customer_name" required>
+        <div class="form-container">
+          <form id="bookingForm" novalidate>
+            
+            <div class="form-group">
+              <label for="customer_name">Full Name</label>
+              <input type="text" id="customer_name" name="customer_name" placeholder="John Doe" autocomplete="name" required>
+            </div>
 
-    <label>Phone Number</label>
-    <input type="tel" name="customer_phone" required>
+            <div class="form-group">
+              <label for="customer_phone">Phone Number</label>
+              <!-- inputmode="tel" triggers the numeric keypad on mobile -->
+              <input type="tel" id="customer_phone" name="customer_phone" placeholder="+60 12 345 6789" autocomplete="tel" inputmode="tel" required>
+            </div>
 
-    <label>Service Type</label>
-    <select name="service_type" required>
-      <option>Home Cleaning</option>
-      <option>Office Cleaning</option>
-      <option>Carpet Cleaning</option>
-      <option>Post-Construction</option>
-      <option>Move In / Move Out</option>
-    </select>
+            <div class="form-group">
+              <label for="service_type">Service Type</label>
+              <div class="select-wrapper">
+                <select id="service_type" name="service_type" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Home Cleaning">Home Cleaning</option>
+                  <option value="Office Cleaning">Office Cleaning</option>
+                  <option value="Carpet Cleaning">Carpet Cleaning</option>
+                  <option value="Post-Construction">Post-Construction</option>
+                  <option value="Move In / Move Out">Move In / Move Out</option>
+                </select>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
 
-    <label>Date</label>
-    <input type="date" name="service_date" required>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service_date">Date</label>
+                <input type="date" id="service_date" name="service_date" required>
+              </div>
+              <div class="form-group">
+                <label for="time_slot">Time Slot</label>
+                <div class="select-wrapper">
+                  <select id="time_slot" name="time_slot" required>
+                    <option value="08:00 - 10:00">08:00 - 10:00</option>
+                    <option value="10:00 - 12:00">10:00 - 12:00</option>
+                    <option value="13:00 - 15:00">13:00 - 15:00</option>
+                    <option value="15:00 - 17:00">15:00 - 17:00</option>
+                  </select>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+            </div>
 
-    <label>Time Slot</label>
-    <select name="time_slot" required>
-      <option>08:00 - 10:00</option>
-      <option>10:00 - 12:00</option>
-      <option>13:00 - 15:00</option>
-      <option>15:00 - 17:00</option>
-    </select>
+            <button type="submit" id="submitBtn" class="btn-primary">
+              <span class="btn-text">Confirm Booking</span>
+              <i class="fas fa-spinner fa-spin loader" style="display: none;"></i>
+            </button>
 
-    <button type="submit">Confirm Booking</button>
-  </form>
-</section>
+            <!-- ARIA live region for accessibility -->
+            <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
 
-<footer>
-  © 2026 Smartcare Cleaning Company
-</footer>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<!-- EmailJS Library -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p id="copyright"></p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
 
-<!-- JavaScript -->
-<script src="script.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
