@@ -20,11 +20,6 @@ cd smartcare-cleaning-company
 open index.html
 ```
 
-## Project Structure
-├── index.html   # Main page
-├── style.css    # Styles
-└── script.js    # Scripts
-
 ## License
 
 © 2026 SmartCare Cleaning Company. All rights reserved.
